@@ -1,5 +1,7 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.20;
+import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
+import "@openzeppelin/contracts/utils/cryptography/MerkleProof.sol";
 
 contract MerkleTree is ERC721 {
     bytes32 immutable public root; // Merkle树的根
